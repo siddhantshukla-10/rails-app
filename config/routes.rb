@@ -12,5 +12,7 @@ Rails.application.routes.draw do
 
   resources :articles #gave us index,new,show,update,delete paths for articles
 
+  resources :categories, except: [:destroy]
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
